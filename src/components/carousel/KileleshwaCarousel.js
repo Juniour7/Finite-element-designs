@@ -4,6 +4,7 @@ import Slider from "react-slick";
 //Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ScrollToTop from "../scrollToTop";
 
 const KileleshwaCarousel = () => {
     const SettingsLg = {
@@ -87,6 +88,9 @@ const KileleshwaCarousel = () => {
                         <img src={require('../../Assets/Projects/KILELESHWA SAHAN/WhatsApp Image 2023-05-31 at 4.47.30 PM.jpeg')} alt="Kileleshwa Sahan Project" className="w-full h-full rounded-md" />
                     </div>
                 </Slider>
+            </div>
+            <div>
+                <ScrollToTop />                         
             </div>
         </>
     );

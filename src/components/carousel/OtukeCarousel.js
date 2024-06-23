@@ -1,6 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
+//Components
+import ScrollToTop from "../scrollToTop";
+
 //Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
@@ -51,6 +54,9 @@ const OtukeCarousel = () => {
                         <img src={require('../../Assets/Projects/OTUKE/IMG20220302144803.jpg')}   alt="Otuke Project Iamge" className="w-full h-full rounded-md" />
                     </div>
                 </Slider>
+            </div>
+            <div>
+                <ScrollToTop />
             </div>
         </>
     );

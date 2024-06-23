@@ -1,6 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
+//components
+import ScrollToTop from "../scrollToTop";
+
 //Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
@@ -51,6 +54,9 @@ const RichmondSuitesCarousel = () => {
                         <img src={require('../../Assets/Projects/RICHMOND SUITES/IMG_20190828_103306.jpg')}   alt="RichmondSuites Image" className="w-full h-full rounded-md" />
                     </div>
                 </Slider>
+            </div>
+            <div>
+                <ScrollToTop />
             </div>
         </>
     );

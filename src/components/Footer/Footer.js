@@ -16,7 +16,7 @@ const Footer = () => {
                         <p className="text-md mb-3 mx-auto">Find Us On</p>
                         <div className="flex gap-4 mx-auto">
                             <div className="w-9 h-9 hover:scale-125 duration-300 ease-in-out">
-                                <a href="" target="blank">
+                                <a href="https://www.linkedin.com/company/finite-element-designs-limited" target="blank">
                                     <img 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/480px-LinkedIn_logo_initials.png"
                                     className="w-full h-full"/>
@@ -30,13 +30,13 @@ const Footer = () => {
                                     className="w-full h-full transition  "/>
                                 </a>
                             </div>
-                            <div className="w-9 h-7 hover:scale-125 duration-300 ease-in-out">
-                                <a href="">
+                            {/* <div className="w-9 h-7 hover:scale-125 duration-300 ease-in-out">
+                                <a href="fedadmin@finiteelementdesignsltd.com" target="_blank">
                                     <img 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/640px-Gmail_icon_%282020%29.svg.png"
                                     className="w-full h-full transition  "/>
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="mt-10 md:pt-5 mx-auto w-[90%] md:w-1/3">
@@ -62,16 +62,19 @@ const Footer = () => {
                     </div>
                     <div className="mt-10 md:pt-5 md:w-1/3 pl-7">
                         <h1 className="text-xl mb-5 text-gray-100">Useful Links</h1>
-                        <button className="px-3 block py-2 hover:text-white animate-pulse"><Link to="/consultancy">Services</Link></button>
+                        <button className="px-3 block py-2 hover:text-white animate-pulse"><Link to="/project">Projects</Link></button>
+                        <button className="px-3 block py-2 hover:text-white animate-pulse"><Link to="/careers">Careers</Link></button>
                         <button className="px-3 block py-2 hover:text-white animate-pulse"><Link to="/contact">Contact Us</Link></button>
                     </div>
                 </div>
                 <div className="bg-about1-900 text-gray-500 flex justify-center p-3 h-16">
-                    <div className="w-5 h-5 mr-3 my-auto">
-                        <FaRegCopyright className="w-full h-full"/>
-                    </div>
+                    <a href="https://wa.me/+254716794363" className="my-auto" target="_blank">
+                        <div className="w-5 h-5 mr-3 my-auto">
+                            <FaRegCopyright className="w-full h-full"/>
+                        </div>
+                    </a>
                     <div className="my-auto">
-                        <h1 className="text-sm">Finite Element Designs Limited {year}. All Rights Reserved.</h1>
+                        <h1 suppressHydrationWarning={true} className="text-sm">Finite Element Designs Limited {year}. All Rights Reserved.</h1>
                     </div>
                 </div>
             </footer>

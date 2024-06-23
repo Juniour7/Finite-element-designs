@@ -1,9 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
 
+//components
+import ScrollToTop from "../scrollToTop";
+
 //Import css files
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick-theme.css";
 
 const LenanaSiteCarousel = () => {
     const SettingsLg = {
@@ -69,6 +72,9 @@ const LenanaSiteCarousel = () => {
                         <img src={require('../../Assets/Projects/LENANA ROAD SITE PICS/DSC00462.JPG')}  alt="Lenana Road Site Project Image" className="w-full h-full rounded-md" />
                     </div>
                 </Slider>
+            </div>
+            <div>
+                <ScrollToTop />
             </div>
         </>
     );

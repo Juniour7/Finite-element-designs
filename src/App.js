@@ -1,9 +1,14 @@
+import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
+
+//Components
+import ScrollToTop from './components/scrollToTop';
 
 
 //Pages
@@ -40,35 +45,37 @@ import IndustrialCareer from './pages/CareerPages/IndCareer';
 function App() {
   return (
     <>
-      <Router basename="/">
-        <Routes>
-        
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/personnel" element={<Personnel />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
+      <HelmetProvider>
+        <Router basename="/">
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/personnel" element={<Personnel />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/contact" element={<Contact />} />
           
-          <Route path="/engService" element={<EngService />} />
-          <Route path="/training" element={<Training />} />
-          <Route path="/consultancy" element={<Consultancy />} />
-          <Route path="/management" element={<Management />} />
-          <Route path="/steelFab" element={<SteelFab />} />
-          <Route  path="/largeformat" element={<LargeFormat />} />
-          <Route path="/designbuild" element={<DesignBuild />} />
+            <Route path="/engService" element={<EngService />} />
+            <Route path="/training" element={<Training />} />
+            <Route path="/consultancy" element={<Consultancy />} />
+            <Route path="/management" element={<Management />} />
+            <Route path="/steelFab" element={<SteelFab />} />
+            <Route  path="/largeformat" element={<LargeFormat />} />
+            <Route path="/designbuild" element={<DesignBuild />} />
 
-          <Route path="/KeyWestProject" element={<KeyWestProject />} />
-          <Route path="/KileleshwaProject" element={<KileleshwaProject />} />
-          <Route path="/LenanaProject" element={<LenanaProject />} />
-          <Route path="/OtukeProject" element={<OtukeProject />} />
-          <Route path="/RichmondSuitesProject" element={<RichmondSuitesProject />} />
+            <Route path="/KeyWestProject" element={<KeyWestProject />} />
+            <Route path="/KileleshwaProject" element={<KileleshwaProject />} />
+            <Route path="/LenanaProject" element={<LenanaProject />} />
+            <Route path="/OtukeProject" element={<OtukeProject />} />
+            <Route path="/RichmondSuitesProject" element={<RichmondSuitesProject />} />
 
-          <Route path="/industrial-career" element={<IndustrialCareer />} />
-          <Route path="/internship" element={<Internship />} />
-          <Route path="/attachment" element={<Attachment />} />
-        </Routes>
-      </Router>
+            <Route path="/industrial-career" element={<IndustrialCareer />} />
+            <Route path="/internship" element={<Internship />} />
+            <Route path="/attachment" element={<Attachment />} />
+          </Routes>
+          <ScrollToTop />
+        </Router>
+      </HelmetProvider>
     </>
   );
 }
